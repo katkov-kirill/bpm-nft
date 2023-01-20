@@ -10,3 +10,7 @@ Additional technologies used:
 - **React Hook Form** for form handling
 - **Joi** for form validation
 - **React Router Dom** for routing
+
+## Deployment link
+
+https://bpm-nft.vercel.app/

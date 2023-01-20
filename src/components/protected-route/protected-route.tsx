@@ -1,3 +1,4 @@
+import { getToken } from 'helpers/token.helper';
 import { FC } from 'react';
 import { Navigate } from 'react-router-dom';
 
@@ -6,7 +7,7 @@ type Props = {
 };
 
 const ProtectedRoute: FC<Props> = ({ children }) => {
-  const token = sessionStorage.getItem('Auth token');
+  const token = getToken();
 
   if (!token) {
     return <Navigate to="/login" replace />;
